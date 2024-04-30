@@ -34,7 +34,7 @@ export default function Accordian() {
         onClick={() => setEnableMultiSelection(!enableMultiSelection)}
         className="multi-seletion-btn"
       >
-        Endable Multi Seletction
+        Enable Multi Seletction
       </button>
       <div className="accordian">
         {data && data.length > 0 ? (
