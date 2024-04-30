@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordian {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+.title:hover {
+  background-color: #8e8888;
+}
+.no-data {
+  padding: 10px;
+  text-align: center;
+}
+
+.multi-seletion-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  border: #8e8888;
+}
+
+.multi-seletion-btn:hover {
+  background-color: #8e8888;
+}
