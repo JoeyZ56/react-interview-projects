@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 20px; */
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-routes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #f00;
+}
