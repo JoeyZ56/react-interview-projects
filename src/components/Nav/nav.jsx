@@ -14,6 +14,9 @@ export default function Nav() {
         <Link to="/random-color" className="nav-link">
           Random Color
         </Link>
+        <Link to="/star-rating" className="nav-link">
+          Star Rating{" "}
+        </Link>
       </div>
     </div>
   );
