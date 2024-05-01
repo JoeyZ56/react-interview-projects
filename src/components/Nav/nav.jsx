@@ -11,6 +11,9 @@ export default function Nav() {
         <Link to="/accordian" className="nav-link">
           Accordian
         </Link>
+        <Link to="/random-color" className="nav-link">
+          Random Color
+        </Link>
       </div>
     </div>
   );
