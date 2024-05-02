@@ -17,6 +17,9 @@ export default function Nav() {
         <Link to="/star-rating" className="nav-link">
           Star Rating{" "}
         </Link>
+        <Link to="/image-slider" className="nav-link">
+          Image Slider{" "}
+        </Link>
       </div>
     </div>
   );

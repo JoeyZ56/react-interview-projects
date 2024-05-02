@@ -10,6 +10,7 @@ export default function RandomColor() {
     return Math.floor(Math.random() * length);
   };
 
+  //handle functions for onClick events
   const handleCreateRandomHexColor = () => {
     const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
     let hexColor = "#";
@@ -25,7 +26,7 @@ export default function RandomColor() {
     const g = randomColorUtility(256);
     const b = randomColorUtility(256);
 
-    setColor(`rgb(${r}, ${g}, ${b})`);
+    setColor(`rgb(${r}, ${g}, ${b})`); // template literal
   };
 
   useEffect(() => {
@@ -53,6 +54,7 @@ export default function RandomColor() {
           Create RGB Color
         </button>
         <button
+          // Conditional (ternary) operator
           onClick={
             typeOfColor === "hex"
               ? handleCreateRandomHexColor
