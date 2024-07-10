@@ -1,9 +1,11 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  max-width: 600px;
+  width: 700px;
+  height: 600px;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 
 .accordian {
@@ -26,6 +28,7 @@
   justify-content: space-between;
   padding: 10px;
   cursor: pointer;
+  color: #fff;
 }
 .title:hover {
   background-color: #8e8888;
@@ -37,11 +40,17 @@
 
 .multi-seletion-btn {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   cursor: pointer;
-  text-align: center;
-  border: #8e8888;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  margin: 10px;
+  transition: background-color 0.3s;
 }
 
 .multi-seletion-btn:hover {
