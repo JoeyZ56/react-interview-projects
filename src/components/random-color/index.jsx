@@ -5,6 +5,7 @@ import Nav from "../Nav/nav";
 export default function RandomColor() {
   const [typeOfColor, setTypeOfColor] = useState("hex");
   const [color, setColor] = useState("#000000");
+  const [activeButton, setActiveButton] = useState("hex");
 
   const randomColorUtility = (length) => {
     return Math.floor(Math.random() * length);
@@ -18,9 +19,9 @@ export default function RandomColor() {
     for (let i = 0; i < 6; i++) {
       hexColor += hex[randomColorUtility(hex.length)];
     }
-    console.log(hexColor);
     setColor(hexColor);
   };
+
   const handleCreateRandomRgbColor = () => {
     const r = randomColorUtility(256);
     const g = randomColorUtility(256);
@@ -37,6 +38,16 @@ export default function RandomColor() {
     }
   }, [typeOfColor]); // eslint-disable-line
 
+  const handleHexButtonClick = () => {
+    setTypeOfColor("hex");
+    setActiveButton("hex");
+  };
+
+  const handleRgbButtonClick = () => {
+    setTypeOfColor("rgb");
+    setActiveButton("rgb");
+  };
+
   return (
     <>
       <Nav />
@@ -47,23 +58,36 @@ export default function RandomColor() {
           background: color,
         }}
       >
-        <button onClick={() => setTypeOfColor("hex")} className="color-btn">
-          Create Hex Color
-        </button>
-        <button onClick={() => setTypeOfColor("rgb")} className="color-btn">
-          Create RGB Color
-        </button>
-        <button
-          // Conditional (ternary) operator
-          onClick={
-            typeOfColor === "hex"
-              ? handleCreateRandomHexColor
-              : handleCreateRandomRgbColor
-          }
-          className="color-btn"
-        >
-          Generate Random Color
-        </button>
+        <div className="buttons-container">
+          <button
+            onClick={handleHexButtonClick}
+            className="color-btn"
+            style={{
+              backgroundColor: activeButton === "hex" ? "green" : "white",
+            }}
+          >
+            Create Hex Color
+          </button>
+          <button
+            onClick={handleRgbButtonClick}
+            className="color-btn"
+            style={{
+              backgroundColor: activeButton === "rgb" ? "green" : "white",
+            }}
+          >
+            Create RGB Color
+          </button>
+          <button
+            onClick={
+              typeOfColor === "hex"
+                ? handleCreateRandomHexColor
+                : handleCreateRandomRgbColor
+            }
+            className="color-btn generate-btn"
+          >
+            Generate Random Color
+          </button>
+        </div>
         <div
           style={{
             display: "flex",

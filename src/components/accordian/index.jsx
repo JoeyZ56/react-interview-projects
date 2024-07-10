@@ -47,6 +47,7 @@ export default function Accordian() {
         >
           Enable Multi Seletction
         </button>
+
         <div className="accordian">
           {data && data.length > 0 ? (
             data.map((dataItem) => (
