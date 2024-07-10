@@ -4,9 +4,9 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  top: 3%;
 }
 
-.gbt-image {
-  width: 100vw;
-  max-width: 600px;
+.title {
+  color: #111;
 }

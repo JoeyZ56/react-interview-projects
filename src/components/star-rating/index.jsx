@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
-import { checkPropTypes } from "prop-types";
+// import { checkPropTypes } from "prop-types";
 import "./style.css";
 import Nav from "../Nav/nav";
 
@@ -47,6 +47,6 @@ export default function StarRating({ noOfStars = 5 }) {
   );
 }
 
-StarRating.propTypes = {
-  noOfStars: checkPropTypes.number,
-};
+// StarRating.propTypes = {
+//   noOfStars: checkPropTypes.number,
+// };

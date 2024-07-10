@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { checkPropTypes } from "prop-types";
+// import { checkPropTypes } from "prop-types";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import "./styles.css";
 
@@ -98,8 +98,8 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
   );
 }
 
-ImageSlider.propTypes = {
-  url: checkPropTypes.string,
-  limit: checkPropTypes.number,
-  page: checkPropTypes.number,
-};
+// ImageSlider.propTypes = {
+//   url: checkPropTypes.string,
+//   limit: checkPropTypes.number,
+//   page: checkPropTypes.number,
+// };

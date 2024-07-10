@@ -3,24 +3,22 @@ import "./style.css";
 
 export default function Nav() {
   return (
-    <div className="container">
-      <div className="nav-routes">
-        <Link to="/" className="nav-link">
-          Home
-        </Link>
-        <Link to="/accordian" className="nav-link">
-          Accordian
-        </Link>
-        <Link to="/random-color" className="nav-link">
-          Random Color
-        </Link>
-        <Link to="/star-rating" className="nav-link">
-          Star Rating{" "}
-        </Link>
-        <Link to="/image-slider" className="nav-link">
-          Image Slider{" "}
-        </Link>
-      </div>
+    <div className="main-container">
+      <Link to="/" className="nav-links">
+        Home
+      </Link>
+      <Link to="/accordian" className="nav-links">
+        Accordian
+      </Link>
+      <Link to="/random-color" className="nav-links">
+        Random Color
+      </Link>
+      <Link to="/star-rating" className="nav-links">
+        Star Rating{" "}
+      </Link>
+      <Link to="/image-slider" className="nav-links">
+        Image Slider{" "}
+      </Link>
     </div>
   );
 }
